@@ -1,0 +1,10 @@
+<router-outlet name="sidebar"></router-outlet>
+
+<div>
+  <router-outlet name="dashboard"></router-outlet>
+</div>
+
+<button md-button
+        [routerLink]="['/root', {outlets: {'dashboard': ['dashboard'], 'sidebar': ['dashboard']}}]">
+  Speakers
+</button>
