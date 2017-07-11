@@ -1,0 +1,14 @@
+<p>
+  sidebar works!
+</p>
+
+<button md-button
+        [routerLink]="['./', {outlets: { 'sidebar': ['entrypoint','test']}}]">
+  sidebar test
+</button>
+
+<button md-button
+        [routerLink]="['./', {outlets: { 'sidebar': ['entrypoint','what']}}]">
+  sidebar what
+</button>
+<router-outlet name="sidebar"></router-outlet>

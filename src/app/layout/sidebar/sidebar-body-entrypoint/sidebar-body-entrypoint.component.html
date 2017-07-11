@@ -1,0 +1,12 @@
+<p>
+  sidebar-body-entrypoint works!
+</p>
+
+<button md-button
+        [routerLink]="['./body', 'test']">
+  entrypoint
+</button>
+<ng-container *ngIf="isDataLoaded==true">
+  <router-outlet name="sidebar"></router-outlet>
+</ng-container>
+
